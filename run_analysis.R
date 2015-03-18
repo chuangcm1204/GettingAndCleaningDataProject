@@ -1,5 +1,5 @@
 #set working directory where data folder locaded
-setwd("C:/Users/Бригада/Downloads/New/GettingData/PrAssn1/GettingAndCleaningDataProject")
+setwd("")
 
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip "
 
