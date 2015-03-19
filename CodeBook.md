@@ -24,14 +24,14 @@ For each record in the dataset it is provided:
 The following steps describe algorithm of data analysis.
 
 ##Step 1. Reading the data from files and assigning names.
-On this step I read the data from UCI HAR Dataset folder from files: **features.txt, activity_labels.txt, X_train and X_test, y_tain and y_test, subject_train and subject_test**. 
+On this step I read the data from UCI HAR Dataset folder from files: *features.txt, activity_labels.txt, X_train and X_test, y_tain and y_test, subject_train and subject_test*. 
 Also assign names to some variable in order to make data readable.
 
 ##Step 2. Merging test and train sets.
 At first I create train set by binding y_train, subject_train and x_train. Afterwards, do the same for test set. Then, merging the train and test sets
 
 ##Step 3. Extracting only the measurements on the mean and standard deviation for each measurement.
-Create a logical vector with *grepl* function, that contains *TRUE* values for the **activity_Id**, **subject**, **mean** and **stdev** columns and **FALSE** values for the others. Subset this data to keep only the necessary columns.
+Create a logical vector with *grepl* function, that contains *TRUE* values for the *activity_Id*, *subject*, *mean* and *stdev* columns and *FALSE* values for the others. Subset this data to keep only the necessary columns.
 
 ##Step 4. Using descriptive activity names to name the activities in the data set
 Merge data subset from step 3 with the activity type table **activity_labels** to make the activity names.
