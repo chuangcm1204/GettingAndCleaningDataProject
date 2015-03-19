@@ -58,7 +58,7 @@ data_mean_std <- Data[ , grepl("mean\\(\\)|std\\(\\)|subject|activity_Id", names
 # Using descriptive activity names to name the activities in the data set
 # Merging data with activity
 data_mean_std <- join(data_mean_std, activity_labels, by = "activity_Id", match = "first")
-# Making daty tidy by excluding redundant information (activity id and name of activity)
+# Making data tidy by excluding redundant information (activity id and name of activity)
 data_mean_std <- data_mean_std[ , -1]
 #str(data_mean_std)
 
